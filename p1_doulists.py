@@ -109,15 +109,9 @@ for cDoulist in sDoulist:
     DoulistFile='Doulists\Doulist_{:0>8d}'.format(cDoulist)
     FileHandle=open(DoulistFile,'w',encoding='UTF-8')
     FileHandle.write("doulist, number of books, title\n")
-    FileHandle.close()    
-    
-    FileHandle=open(DoulistFile,'a',encoding='UTF-8')
     FileHandle.write("{:0>8d}, {:0>3d}, {}\n\n".format(cDoulist, BookNumber, DoulistTitle))
-    FileHandle.close()
-    
-    FileHandle=open(DoulistFile,'a',encoding='UTF-8')
     FileHandle.write("ID, rating, votes, date, title, author, publisher\n")
-    FileHandle.close()
+    FileHandle.close()    
     
     # crawl the pages in a doulist
     for i in range(0,int(BookNumber/BookPerPage+1)):
