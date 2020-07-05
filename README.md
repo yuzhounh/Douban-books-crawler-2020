@@ -1,11 +1,11 @@
 # Douban books crawler. 
-Get douban books information from doulists and tags. 
+Get douban books information from doulists and tags.  
+Results: https://github.com/yuzhounh/Douban-books-2020.   
 Copyright (C) 2020 Jing Wang  
 
 ### Usage
 (1) Run main.py.  
 (2) Run main.m.   
-Results: https://github.com/yuzhounh/Douban-books-2020.   
  
 ### Contact information
 Jing Wang  
