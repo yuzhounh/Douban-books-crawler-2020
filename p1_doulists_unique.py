@@ -45,10 +45,7 @@ FileHandle.close()
 
 # read the notes and output the doulist IDs in the notes
 iNote=0
-for cNote in sNote:  # current note
-    delay=12*random.random()  # delay time (seconds)
-    time.sleep(delay)
-    
+for cNote in sNote:  # current note    
     UrlNote="https://www.douban.com/note/{}".format(cNote)
     html=getHtml(UrlNote)
     sDoulist=getList(html)
