@@ -11,7 +11,6 @@ import urllib.request
 from urllib.parse import quote
 
 # constant
-alpha=1 # control the delay time
 delta=2.5 
 threshold=(9.0-delta)*math.log(1000) # the threshold of a good book
 BookPerPage=25 # the number of books per page (except for the last one)
@@ -91,9 +90,6 @@ for cDoulist in sDoulist:
     iDoulist=iDoulist+1
     print("\nProcessing doulist {} of {}.\nDoulist ID: {}".format(iDoulist, nDoulist, cDoulist))
 
-    delay=alpha+alpha*random.random()  # delay time (seconds)
-    # time.sleep(delay)
-
     # https://www.douban.com/doulist/x
     # to get the number of books in a doulist
     url="https://www.douban.com/doulist/{}".format(cDoulist)
@@ -132,9 +128,6 @@ for cDoulist in sDoulist:
             LenBook=BookPerPage
         else:
             LenBook=BookNumber-int(BookNumber/BookPerPage)*BookPerPage
-        
-        delay=alpha+alpha*random.random()  # delay time (seconds)
-        time.sleep(delay)
         
         tmp=i*BookPerPage
         url="https://www.douban.com/doulist/{}/?start={}".format(cDoulist,tmp)
