@@ -11,7 +11,6 @@ import urllib.request
 from urllib.parse import quote
 
 # constant
-alpha=10 # control the delay time
 delta=2.5 
 threshold=(9.0-delta)*math.log(1000) # the threshold of a good book
 BookPerPage=25 # the number of books per page (except for the last one)
@@ -80,9 +79,6 @@ for cTag in sTag:  # current tag
     # crawl the pages in a Tags
     for i in range(0,PageNumber):
         print("Page {}".format(i+1))
-
-        delay=alpha+alpha*random.random()  # delay time (seconds)
-        # time.sleep(delay)
         
         url='https://book.douban.com/tag/{}?start={}'.format(cTag, i*BooksPerPage)
         try:
