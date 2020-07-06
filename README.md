@@ -1,5 +1,5 @@
 # Douban books crawler. 
-# 豆瓣读书爬虫
+豆瓣读书爬虫.
 Get douban books information from doulists and tags.  
 Copyright (C) 2020 Jing Wang  
 
