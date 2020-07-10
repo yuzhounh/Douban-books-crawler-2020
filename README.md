@@ -3,8 +3,8 @@ Get douban books information from doulists and tags.
 Copyright (C) 2020 Jing Wang  
 
 ### Usage
-(1) Run main.py.  
-(2) Run main.m.   
+(1) Run main.py with Python 3.7.  
+(2) Run main.m with Matlab R2018a.   
  
 Results: https://github.com/yuzhounh/Douban-books-2020.   
 
