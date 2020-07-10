@@ -5,12 +5,12 @@ Copyright (C) 2020 Jing Wang
 ### Usage
 (1) Run main.py.  
 (2) Run main.m.   
+  
+Results: https://github.com/yuzhounh/Douban-books-2020.  
 
 ### Softwares
 Python 3.7.   
-Matlab R2018a.  
- 
-Results: https://github.com/yuzhounh/Douban-books-2020.   
+Matlab R2018a.    
 
 ### Contact information
 Jing Wang  
